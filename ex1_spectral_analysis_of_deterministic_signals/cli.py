@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from numpy.fft import ifft
+from numpy.fft import fft, ifft
 
 def main():
     input_array = []
@@ -86,6 +86,5 @@ def main():
     plt.grid(True)
     plt.savefig("IDFT_result.png")
     print("Figure: IDFT_result is generated.")
-
 if __name__ == "__main__":
     main()
